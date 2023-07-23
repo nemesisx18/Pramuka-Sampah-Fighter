@@ -23,9 +23,13 @@ public class gerak : MonoBehaviour
     public TextMeshProUGUI infoNyawa;
     public TextMeshProUGUI infoKoin;
 
+    public GameObject winPanel;
+    public GameObject losePanel;
+
     [Header("Player Stats")]
     public int nyawa;
     public int koin;
+    public int targetSampah;
 
     Vector2 mulai;
     public bool ulang;
@@ -41,7 +45,8 @@ public class gerak : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         mulai = transform.position;
-        UpdateUI();
+
+        Time.timeScale = 1;
     }
 
     void Update()
@@ -54,8 +59,13 @@ public class gerak : MonoBehaviour
 
         if (nyawa <= 0)
         {
+            Debug.Log("Game Over");
+            losePanel.SetActive(true);
+            Time.timeScale = 0;
             Destroy(gameObject);
         }
+
+        UpdateUI();
 
         // Check if the player is on the ground
         tanah = Physics2D.OverlapCircle(deteksiTanah.position, jangkauan, targetLayer);
@@ -154,13 +164,18 @@ public class gerak : MonoBehaviour
     public void UpdateKoin(int value)
     {
         koin += value;
-        UpdateUI();
+
+        if(koin == targetSampah)
+        {
+            Debug.Log("Level selesai");
+            winPanel.SetActive(true);
+            Time.timeScale = 0;
+        }
     }
 
     public void UpdateNyawa(int value)
     {
         nyawa += value;
-        UpdateUI();
     }
 
     // Function to update the UI text for Nyawa and Koin
@@ -174,6 +189,14 @@ public class gerak : MonoBehaviour
         if (infoKoin != null)
         {
             infoKoin.text = "Koin: " + koin.ToString();
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D col)
+    {
+        if(col.gameObject.CompareTag("Respawn"))
+        {
+            ulang = true;
         }
     }
 }
