@@ -1,0 +1,399 @@
+fileFormatVersion: 2
+guid: c6d4e00ead4d00f44893e7d16b519ce7
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 2
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: karakter dan lainnya-4_0
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 1474
+        width: 88
+        height: 327
+      alignment: 9
+      pivot: {x: 0.3000065, y: 0.88571644}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc49df5bc3a5cc249a84d14695ec17ab
+      internalID: -1899857397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karakter dan lainnya-4_1
+      rect:
+        serializedVersion: 2
+        x: 1191
+        y: 1475
+        width: 76
+        height: 324
+      alignment: 9
+      pivot: {x: 0.6157869, y: 0.8530748}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b09c06cd94b0a54f99a04e7e4b7975c
+      internalID: -1581643499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karakter dan lainnya-4_2
+      rect:
+        serializedVersion: 2
+        x: 1649
+        y: 1496
+        width: 101
+        height: 280
+      alignment: 9
+      pivot: {x: 0.5, y: 0.8316732}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68d2689b2f6911d48962365db12fde53
+      internalID: -325393249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karakter dan lainnya-4_3
+      rect:
+        serializedVersion: 2
+        x: 1962
+        y: 1515
+        width: 104
+        height: 283
+      alignment: 9
+      pivot: {x: 0.4435906, y: 0.85240316}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e481fa33467866a478b8226f93cbf9cd
+      internalID: -2073599568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karakter dan lainnya-4_4
+      rect:
+        serializedVersion: 2
+        x: 2382
+        y: 1246
+        width: 696
+        height: 699
+      alignment: 9
+      pivot: {x: 0.35249487, y: 0.08875874}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b04e47fcc760ae04fb80559f7c41fc78
+      internalID: 1747890191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karakter dan lainnya-4_5
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 877
+        width: 142
+        height: 367
+      alignment: 9
+      pivot: {x: 0.39671648, y: 0.8516686}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03440b3ed4934d943aeb36d5c43e8269
+      internalID: 301520830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karakter dan lainnya-4_6
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 928
+        width: 164
+        height: 367
+      alignment: 9
+      pivot: {x: 0.24960104, y: 0.8436765}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6403261dcd5335343826f21398d93bc1
+      internalID: -634791524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karakter dan lainnya-4_7
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 1085
+        width: 61
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5480857, y: 0.8373224}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2697224cfc83b8499b95bdcd171232f
+      internalID: -1990440680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karakter dan lainnya-4_8
+      rect:
+        serializedVersion: 2
+        x: 2011
+        y: 1020
+        width: 55
+        height: 200
+      alignment: 9
+      pivot: {x: 0.55332917, y: 0.80799013}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67c948c037951344ca04fe010b511df2
+      internalID: -914286223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karakter dan lainnya-4_9
+      rect:
+        serializedVersion: 2
+        x: 1622
+        y: 796
+        width: 139
+        height: 70
+      alignment: 9
+      pivot: {x: 0.75322914, y: 0.5838056}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b61648adb06ad04993119bfc7be8267
+      internalID: -206420103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karakter dan lainnya-4_10
+      rect:
+        serializedVersion: 2
+        x: 1939
+        y: 825
+        width: 142
+        height: 65
+      alignment: 9
+      pivot: {x: 0.74787927, y: 0.49999812}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 184f97598493ecb44b8411ffacee3a58
+      internalID: 590402171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karakter dan lainnya-4_11
+      rect:
+        serializedVersion: 2
+        x: 2595
+        y: 440
+        width: 334
+        height: 568
+      alignment: 9
+      pivot: {x: 0.56147444, y: 0.8098491}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff932a4e19d68dc4ab7e1a951c9347fc
+      internalID: 1353818113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      karakter dan lainnya-4_0: -1899857397
+      karakter dan lainnya-4_1: -1581643499
+      karakter dan lainnya-4_10: 590402171
+      karakter dan lainnya-4_11: 1353818113
+      karakter dan lainnya-4_2: -325393249
+      karakter dan lainnya-4_3: -2073599568
+      karakter dan lainnya-4_4: 1747890191
+      karakter dan lainnya-4_5: 301520830
+      karakter dan lainnya-4_6: -634791524
+      karakter dan lainnya-4_7: -1990440680
+      karakter dan lainnya-4_8: -914286223
+      karakter dan lainnya-4_9: -206420103
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
