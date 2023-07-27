@@ -1,10 +1,15 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 using TMPro;
+using UnityEngine;
 
 public class gerak : MonoBehaviour
 {
+    [SerializeField] private AudioClip winClip;
+    [SerializeField] private AudioClip jumpClip;
+    [SerializeField] private AudioClip sampahClip;
+    [SerializeField] private AudioClip gameOverClip;
+
+    private GlobalAudioPlayer player;
+
     [Header("Movement")]
     public float kecepatan;
     public bool balik;
@@ -45,6 +50,7 @@ public class gerak : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         mulai = transform.position;
+        player = GlobalAudioPlayer.AudioInstance;
 
         Time.timeScale = 1;
     }
@@ -60,6 +66,7 @@ public class gerak : MonoBehaviour
         if (nyawa <= 0)
         {
             Debug.Log("Game Over");
+            player.PlayClip(gameOverClip);
             losePanel.SetActive(true);
             Time.timeScale = 0;
             Destroy(gameObject);
@@ -77,12 +84,12 @@ public class gerak : MonoBehaviour
         pindah = Input.GetAxis("Horizontal");
 
         // Check if the left or right arrow key is pressed
-        if (Input.GetKey(KeyCode.LeftArrow) || tombolKiri==true)
+        if (Input.GetKey(KeyCode.LeftArrow) || tombolKiri == true)
         {
             transform.Translate(Vector2.left * kecepatan * Time.deltaTime);
             pindah = -1;
         }
-        else if (Input.GetKey(KeyCode.RightArrow) || tombolKanan ==true)
+        else if (Input.GetKey(KeyCode.RightArrow) || tombolKanan == true)
         {
             pindah = 1;
         }
@@ -91,8 +98,9 @@ public class gerak : MonoBehaviour
         rb.velocity = new Vector2(pindah * kecepatan, rb.velocity.y);
 
         // Check if the jump button is pressed and the player is on the ground
-        if ((Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W) || tombolLompat==true) && tanah)
+        if ((Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W) || tombolLompat == true) && tanah)
         {
+            player.PlayClip(jumpClip);
             if (!lompat) // Only initiate jump if not already jumping
             {
                 Lompat();
@@ -164,10 +172,12 @@ public class gerak : MonoBehaviour
     public void UpdateKoin(int value)
     {
         koin += value;
+        player.PlayClip(sampahClip);
 
-        if(koin == targetSampah)
+        if (koin == targetSampah)
         {
             Debug.Log("Level selesai");
+            player.PlayClip(winClip);
             winPanel.SetActive(true);
             Time.timeScale = 0;
         }
@@ -194,7 +204,7 @@ public class gerak : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D col)
     {
-        if(col.gameObject.CompareTag("Respawn"))
+        if (col.gameObject.CompareTag("Respawn"))
         {
             ulang = true;
         }
