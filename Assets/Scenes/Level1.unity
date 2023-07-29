@@ -2879,7 +2879,7 @@ MonoBehaviour:
   gameOverClip: {fileID: 8300000, guid: 276eb348fbffbf54599f85f3b2673033, type: 3}
   kecepatan: 5
   balik: 0
-  kekuatanLompat: 0.5
+  kekuatanLompat: 8.5
   tanah: 0
   targetLayer:
     serializedVersion: 2
@@ -3206,8 +3206,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2093110851}
     - target: {fileID: 6454464751205118004, guid: de2da5629af43cd41bf99f180ab6a41d, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1068194249}
+    - target: {fileID: 6454464751205118004, guid: de2da5629af43cd41bf99f180ab6a41d, type: 3}
       propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 2093110851}
+    - target: {fileID: 6454464751205118004, guid: de2da5629af43cd41bf99f180ab6a41d, type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1068194250}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de2da5629af43cd41bf99f180ab6a41d, type: 3}

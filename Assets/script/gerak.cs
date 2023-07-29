@@ -100,7 +100,7 @@ public class gerak : MonoBehaviour
         // Check if the jump button is pressed and the player is on the ground
         if ((Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W) || tombolLompat == true) && tanah)
         {
-            player.PlayClip(jumpClip);
+            //player.PlayClip(jumpClip);
             if (!lompat) // Only initiate jump if not already jumping
             {
                 Lompat();
@@ -126,7 +126,8 @@ public class gerak : MonoBehaviour
 
     public void Lompat()
     {
-        rb.AddForce(new Vector2(0, kekuatanLompat), ForceMode2D.Impulse);
+        //rb.AddForce(new Vector2(0, kekuatanLompat), ForceMode2D.Impulse);
+        rb.velocity = new Vector2(rb.velocity.x, kekuatanLompat);
     }
 
     private void BalikBadan()
