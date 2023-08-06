@@ -77,8 +77,15 @@ public class gerak : MonoBehaviour
         // Check if the player is on the ground
         tanah = Physics2D.OverlapCircle(deteksiTanah.position, jangkauan, targetLayer);
 
+        if(rb.velocity.x == 0 && rb.velocity.y == 0)
+        {
+            anim.SetBool("lari", false);
+            anim.SetBool("lompat", false);
+        }
+
         // Set the "lari" boolean in the Animator based on the ground condition
-        anim.SetBool("lari", Mathf.Abs(rb.velocity.x) > 0.1f && tanah);
+        anim.SetBool("lari", Mathf.Abs(rb.velocity.x) > 0.5f && tanah);
+        anim.SetBool("lompat", Mathf.Abs(rb.velocity.y) > 0.1f);
 
         // Handle movement using Input
         pindah = Input.GetAxis("Horizontal");
@@ -162,6 +169,7 @@ public class gerak : MonoBehaviour
     public void TekanLompat()
     {
         tombolLompat = true;
+       
     }
 
     public void LepasLompat()
